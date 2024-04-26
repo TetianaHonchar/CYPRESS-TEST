@@ -1,30 +1,30 @@
 // describe("Our first block of tests", () => {
-// //     it("LMS Site development test", () => {
-// //   // cypress code
-// //     cy.visit("https://www.edu.goit.global/account/login");
-// //     // Знаходимо інпут з поштою та вводимо email
-// //     cy.get("#user_email").type("user888@gmail.com");
-// //     // Знаходимо інпут з паролем та вводимо пароль
-// //     cy.get("#user_password").type("1234567890");
-// //     // Натискаємо кнопку "Log in"
-// //     cy.get("[type=submit]").click();
-// //     // Перевіряємо, що кнопка має текст "Log in"
-// //     cy.get('[type="submit"]').should("have.text", "Log in");
-// //     // Перевіряємо колір кнопки
-// //     cy.get('[type="submit"]').should("have.css", "background-color", "rgb(255, 107, 10)");
-// //     });
+//     it("LMS Site development test", () => {
+//   // cypress code
+//     cy.visit("https://www.edu.goit.global/account/login");
+//     // Знаходимо інпут з поштою та вводимо email
+//     cy.get("#user_email").type("user888@gmail.com");
+//     // Знаходимо інпут з паролем та вводимо пароль
+//     cy.get("#user_password").type("1234567890");
+//     // Натискаємо кнопку "Log in"
+//     cy.get("[type=submit]").click();
+//     // Перевіряємо, що кнопка має текст "Log in"
+//     cy.get('[type="submit"]').should("have.text", "Log in");
+//     // Перевіряємо колір кнопки
+//     cy.get('[type="submit"]').should("have.css", "background-color", "rgb(255, 107, 10)");
+//     });
 
-//     // it("scrollIntoView test", () => {
-//     //     cy.visit("https://www.edu.goit.global/account/login");
+//     it("scrollIntoView test", () => {
+//         cy.visit("https://www.edu.goit.global/account/login");
 
-//     //     cy.get('#user_email').type("user888@gmail.com");
+//         cy.get('#user_email').type("user888@gmail.com");
 
-//     //     cy.get("#user_password").type("1234567890");
+//         cy.get("#user_password").type("1234567890");
 
-//     //     cy.get("[type='submit']").click();
+//         cy.get("[type='submit']").click();
 
-//     //     cy.get('[id="go-to-the-course-homepage-widget"]').scrollIntoView().should("be.visible");
-//     // });
+//         cy.get('[id="go-to-the-course-homepage-widget"]').scrollIntoView().should("be.visible");
+//     });
 
 //   });
 
@@ -48,7 +48,7 @@
 //     });
 //   });
 
-//ДЗ1
+// // ДЗ1
 // describe("login test", () => {
 //     it("user login", () => {
 //       cy.visit("https://www.edu.goit.global/account/login");
@@ -79,8 +79,6 @@
 
 //   });  
 // });
-  
-
 
 // import { Login } from "../pages/Login";
 
@@ -101,27 +99,27 @@
 //   });
 // });
 
-//ДЗ3
-// import { Login } from "../pages/Login";
-// import { Logout } from "../pages/Logout";
+// ДЗ3
+import { Login } from "../pages/Login";
+import { Logout } from "../pages/Logout";
 
-// const LoginPage = new Login();
-// const LogoutPage = new Logout();
+const LoginPage = new Login();
+const LogoutPage = new Logout();
 
-// describe("login test", () => {
-//   it("user login", () => {
-//     LoginPage.navigate();
+describe("login test", () => {
+  it("user login", () => {
+    LoginPage.navigate();
 
-//     LoginPage.userLogin();
+    LoginPage.userLogin();
 
-//     LogoutPage.getLogout ();
+    LogoutPage.getLogout ();
     
-//     LogoutPage.userLoguot ();
-//   });  
-// });
+    LogoutPage.userLoguot ();
+  });  
+});
 
 
-// ТЕСТУВАННЯ API
+// // ТЕСТУВАННЯ API
 // describe('httpbin tests', () => {
 //   it('response code should be 200', () => {
 //     cy.request('https://httpbin.org').then(response => {
@@ -131,7 +129,7 @@
 //     })
 //   })
 // })
-// Приклад зафейленого тесту
+// // Приклад зафейленого тесту
 // describe('httpbin tests', () => {
 //   const request = {
 //     url: 'https://httpbin.org/non-existing-url',
