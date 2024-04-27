@@ -6,7 +6,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     video: true,
-    screenshotsFolder: "cypress/screenshots"
+    screenshotsFolder: "cypress/screenshots", // Додано кому тут
     // Для запису відео використовуємо команду npx cypress run -b chrome
   },
 });
